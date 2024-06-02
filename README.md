@@ -43,63 +43,17 @@ CarouselSlider(
   }).toList(),
 )
 ```
+## Explanation
+
+- CarouselSlider: The CarouselSlider widget displays the images. It has properties for auto-playing, enlarging the center page, and aspect ratio
+
+- Custom Indicators: The Row widget below the CarouselSlider contains custom indicators. These indicators are Container widgets that change color based on the current index of the carousel.
+
 <div align="center">
-     <img src="https://github.com/Dipalig971/advflutterch3/assets/143181151/98951421-18cc-48c8-8538-3ae484835fc3" width=22% height=33%>
-  <img src="https://github.com/Dipalig971/advflutterch3/assets/143181151/05508523-8ed2-4c5d-a101-7c63bd351110" width=22% height=33%>
-  <video src = 'https://github.com/Dipalig971/advflutterch3/assets/143181151/d5b9c8a2-d915-421b-8f89-78e3b78da18f'>
+   <img src="https://github.com/Dipalig971/media_player_example/assets/143181151/8c49a112-281e-4954-b372-42a3b6e05339" width=22% height=33%>
+  <img src="https://github.com/Dipalig971/media_player_example/assets/143181151/ef9067c2-dd8d-4897-ba34-a3eb8a7e5874" width=22% height=33%>
+  <img src="https://github.com/Dipalig971/media_player_example/assets/143181151/65a99900-b49f-463b-afe8-bb3662dfd82c" width=22% height=33%>
+  <video src = 'https://github.com/Dipalig971/media_player_example/assets/143181151/616a0c36-119d-464f-aee1-05ae560c6531'>
  </div>
 
-
-
-<h2 align="center">3.1 connectivity_plus package</h2>
-
-Step 1.Add the connectivity_plus dependency to your pubspec.yaml file:
-
-```yaml
-dependencies:
-  flutter:
-    sdk: flutter
- flutter_inappwebview: ^6.0.0
-```
-Then run flutter pub get to install the dependency.
-
-### usage
-
-Step 2.Import the connectivity_plus package in your Dart file:
-```
-import 'package:flutter_inappwebview/flutter_inappwebview.dart';
-```
-
-Step 3.Here’s a simple example of how to use connectivity_plus to monitor network connectivity in a Flutter app.
-
-```dart
-import 'package:flutter/material.dart';
-import 'package:flutter_inappwebview/flutter_inappwebview.dart';
-
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('In-App WebView Example'),
-        ),
-        body: InAppWebView(
-          initialUrlRequest: URLRequest(url: Uri.parse("https://www.example.com")),
-        ),
-      ),
-    );
-  }
-}
-
-```
-<div align="center">
-     <img src="https://github.com/Dipalig971/advflutterch3/assets/143181151/7e094015-c736-420a-8d99-3be211236843" width=22% height=33%>
-  <img src="https://github.com/Dipalig971/advflutterch3/assets/143181151/68c05bc2-7d29-4b99-af0d-637243176ea9" width=22% height=33%>
-  <video src = 'https://github.com/Dipalig971/advflutterch3/assets/143181151/8a46b30f-b3bc-4d14-bea0-1c5fe452f6ef'>
- </div>
 
