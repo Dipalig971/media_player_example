@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:media_player_example/screen/CarousalSlider/provider/slider_provider.dart';
 import 'package:media_player_example/screen/CarousalSlider/view/carousal_Slider_screen.dart';
+import 'package:provider/provider.dart';
 
 void main(){
-  runApp(const MyApp());
+  runApp(MultiProvider(
+    providers: [
+      ChangeNotifierProvider(create: (context) => CarouselSliderProvider(),)
+    ],
+      builder:(context, child) => const MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -12,7 +18,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: CarousalSliderScreen(),
+      home: CarouselSliderScreen(),
     );
   }
 }
